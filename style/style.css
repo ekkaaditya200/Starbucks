@@ -108,7 +108,7 @@ header ul li a{
 }
 .sci{
     position: absolute;
-    top: 50%;
+    top: 62%;
     right: 30px;
     transform: translateY(-50%);
     display: flex;
