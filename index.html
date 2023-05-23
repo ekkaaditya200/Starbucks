@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="https://www.starbucks.com/"><img src="../Images/logo1.png" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">More</a></li>
+                <li><a href="#">Whats's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+
+            <div class="textBox">
+                <h2>It's not just Coffe <br>It's <span class="spancolor">Starsbucks</span></h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti ut necessitatibus minus
+                    architecto. Reprehenderit veniam numquam alias expedita nisi, voluptatum eveniet iste iusto ipsam
+                    eligendi voluptatibus similique officiis quisquam beatae!</p>
+                <a href="#" class="learnmore">Learn more</a>
+            </div>
+
+            <div class="imageBox">
+                <img src="../Images/img1.png" class="starbucks">
+            </div>
+
+        </div>
+        <ul class="thumb">
+            <li><img src="../Images/thumb1.png"
+                    onclick="imagSlider('../Images/img1.png'); changeCircleColor('#017143'); logochange('../Images/logo1.png')">
+            </li>
+            <li><img src="../Images/thumb2.png"
+                    onclick="imagSlider('../Images/img2.png'); changeCircleColor('#eb7495'); logochange('../Images/logo2.png')">
+            </li>
+            <li><img src="../Images/thumb3.png"
+                    onclick="imagSlider('../Images/img3.png'); changeCircleColor('#d752b1'); logochange('../Images/logo3.png')">
+            </li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="../Images/facebook.png"></a></li>
+            <li><a href="#"><img src="../Images/twitter.png"></a></li>
+            <li><a href="https://www.instagram.com/?next=%2F&hl=en"><img src="../Images/instagram.png"></a></li>
+        </ul>
+    </section>
+</body>
+<script type="text/javascript">
+    function imagSlider(anything) {
+        document.querySelector('.starbucks').src = anything;
+    }
+    function changeCircleColor(color) {
+        const circle = document.querySelector('.circle');
+        circle.style.background = color;
+
+        const spancolor = document.querySelector('.spancolor');
+        spancolor.style.color = color;
+
+        const learnmore = document.querySelector('.learnmore');
+        learnmore.style.background = color;
+    }
+    function logochange(logo) {
+        document.querySelector('.logo').src = logo;
+    }
+</script>
+
+</html>
