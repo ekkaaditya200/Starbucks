@@ -29,6 +29,7 @@ header .logo{
 header ul{
     position: relative; 
     display: flex;
+    z-index: 10;
 }
 header ul li{
     list-style: none;
